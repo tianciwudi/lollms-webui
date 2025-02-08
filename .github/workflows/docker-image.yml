@@ -23,7 +23,7 @@ jobs:
           docker save my-image | gzip > my-image.tar.gz
           
       - name: Upload Docker image as artifact
-        uses: actions/upload-artifact@v3  # 升级到 v3
+        uses: actions/upload-artifact@v4  # 升级到 v3
         with:
           name: my-image
           path: my-image.tar.gz
